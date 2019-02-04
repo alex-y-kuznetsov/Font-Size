@@ -11,14 +11,17 @@ var calcFontSize = function () {
 	var paraSize = +currentParaWidth.slice(0, -2);
 
 	while (headingSize > paraSize) {
-		headingSize -= 1;
-		heading.style.fontSize = headingSize + 'px';
+		headingSize --;
 	}
 
 	while (headingSize < paraSize) {
-		headingSize += 1;
-		heading.style.fontSize = headingSize + 'px';
+		headingSize ++;
 	}
+
+	heading.style.fontSize = headingSize + 'px';
 }
 
 calcFontSize();
+
+
+// Сложение мух с котлетами. Как перевести длину параграфа в размер шрифта заголовка?
