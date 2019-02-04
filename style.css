@@ -2,3 +2,7 @@
 #paragraph {
 	display: inline-block;
 }
+
+#heading {
+	font-size: 300px;
+}
